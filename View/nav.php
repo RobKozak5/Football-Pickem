@@ -2,7 +2,7 @@
     <!-- Navbar -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#cc0000; border-bottom: none;">
-                <a class="navbar-brand" style="color:#fff">Football Pickem</a>
+                <a class="navbar-brand" style="color:#fff" href="../dashboard.php">Football Pickem</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

@@ -1,6 +1,9 @@
 <?php
 // Include list
 include "../Controller/DB_include.php";
+include "../View/header.php";
+include "../View/nav.php";
+include "../Controller/weekly-games.php";
 echo "game selector template";
 
 // get database connection
@@ -9,51 +12,6 @@ $db = $database->connect();
 
 // Set week from GET variable
 $week = $_GET['week'];
-
-echo "
-<table class='table'>
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Default</td>
-        <td>Defaultson</td>
-        <td>def@somemail.com</td>
-      </tr>      
-      <tr class='success'>
-        <td>Success</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr class='danger'>
-        <td>Danger</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr class='info'>
-        <td>Info</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-      <tr class='warning'>
-        <td>Warning</td>
-        <td>Refs</td>
-        <td>bo@example.com</td>
-      </tr>
-      <tr class='active'>
-        <td>Active</td>
-        <td>Activeson</td>
-        <td>act@example.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-";
 
 // Get Thursday night games
 $query = "SELECT * FROM v_pickem_grid 
@@ -64,45 +22,3 @@ foreach ($db->query($query) as $row) {
     echo $row['away_team'];
 };
 ?>
-<table class="table">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Default</td>
-        <td>Defaultson</td>
-        <td>def@somemail.com</td>
-      </tr>      
-      <tr class="success">
-        <td>Success</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr class="danger">
-        <td>Danger</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr class="info">
-        <td>Info</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-      <tr class="warning">
-        <td>Warning</td>
-        <td>Refs</td>
-        <td>bo@example.com</td>
-      </tr>
-      <tr class="active">
-        <td>Active</td>
-        <td>Activeson</td>
-        <td>act@example.com</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
