@@ -1,7 +1,7 @@
 <?php
 // Includes & Requires
     require './View/header.php';
-    require './View/nav.php';
+    
     require './View/side-nav.php';
 // /Includes & Requires
 ?>

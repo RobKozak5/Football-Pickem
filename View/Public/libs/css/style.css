@@ -2556,12 +2556,12 @@ Pageheader
   margin-bottom: 10px;
   position: relative;
 }
-.product-colors input[type="checkbox"],
+/* .product-colors input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
-  display: none;
-}
+  
+} */
 .product-description {
 }
 
@@ -4404,7 +4404,7 @@ Pills vertical
 }
 
 .switch-button input[type="checkbox"] {
-  display: none;
+  /* display: none; */
 }
 
 .switch-button input[type="checkbox"]:checked + span label {
